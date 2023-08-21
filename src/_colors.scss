@@ -87,9 +87,12 @@ $state-overlay-opacities: (
 // Main colors
 //
 
-$surface-z0: #f9f9f9;
-$surface-z1: #fff;
-$surface-z8: #fff;
+//$surface-z0: #f9f9f944;
+//$surface-z1: #fff4;
+//$surface-z8: #fff4;
+$surface-z0: #000b1e;
+$surface-z1: #000b1e;
+$surface-z8: #000b1e;
 $surface-switch-thumb: #fff;
 $on-surface: on($surface-z0);
 
@@ -144,10 +147,14 @@ $on-titlebar: on($titlebar);
 $titlebar-indicator: currentcolor;
 
 @if $dark-theme {
-  $surface-z0: #121212;
-  $surface-z1: mix(white, $surface-z0, 5%);
-  $surface-z8: mix(white, $surface-z0, 12%);
-  $surface-switch-thumb: mix(white, $surface-z0, 60%);
+    //$surface-z0: #12121244;
+    $surface-z0: rgba(#000b1e, 0.85);
+    $surface-z1: rgba(#000b1e, 0.85);
+    $surface-z8: rgba(#000b1e, 0.85);
+    $surface-switch-thumb: rgba(#000b1e, 0.85);
+  //$surface-z1: mix(#fff4, $surface-z0, 5%);
+  //$surface-z8: mix(#fff4, $surface-z0, 12%);
+  //$surface-switch-thumb: mix(#fff4, $surface-z0, 60%);
   $on-surface: on($surface-z0);
 
   $primary: $primary-on-dark;
